@@ -4,24 +4,74 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title> Ryan Buxton </title>
   </head>
-  <div class="w3-display-container w3-blue" style="width:100%;height:100%;">
-    <div class="w3-display-middle w3-center">
-      <div class="w3-jumbo">Hi</div>
-      <div class="w3-xxlarge">I'm Ryan</div>
-      <div class="w3-xxxlarge">I like computers</div>
+  <div class="w3-display-container w3-black w3-center" style="width:100%;height:100%;">
+    <img id="titleImage" src="mountain.jpg" alt="a pretty mountain" class="w3-image" style="height:100%;object-fit:cover;width:100%;">
+    <div class="w3-display-middle w3-center w3-container w3-border" style="background: rgba(8, 8, 8, 0.4);">
+      <div class="w3-jumbo w3-container">Hi</div>
+      <div class="w3-xlarge">I'm Ryan.</div>
+      <div class="w3-xxxlarge">I like computers.</div>
     </div>
   </div>
+  <script type="text/javascript">
+    var imgs=["mountain.jpg", "race_mentality1.jpg", "tool.jpg"];
+    var pos = 1;
+
+    function fadeIn(element) {
+      var op = 0.1;  // initial opacity
+      var timer = setInterval(function () {
+        if (op >= 1){
+          clearInterval(timer);
+        }
+        element.style.opacity = op;
+        op += 0.1;
+      }, 50);
+    }
+    function fadeOutAndCallBack(image, callback){
+      var opacity = 1;
+      var timer = setInterval(function(){
+        if(opacity < 0.1){
+          clearInterval(timer);
+          callback();
+        }
+        image.style.opacity = opacity
+        opacity -= .1;
+      }, 50);
+    }
+
+    function gallery(){
+      fadeOutAndCallBack(document.getElementById("titleImage"), function(){
+        document.getElementById("titleImage").src  = imgs[pos];
+        if(pos < imgs.length - 1) pos++;
+        else pos = 0;
+        fadeIn(document.getElementById("titleImage"))
+      })
+    }
+
+    window.onload = setInterval(gallery, 5000);
+  </script>
 
   <hr>
 
-  <div class="w3-cell-row">
-    <div class="w3-cell w3-cell-middle w3-container w3-green w3-center w3-mobile" style="width:33%;"><p class="w3-xxxlarge">Who am I?</p></div>
+  <div class="w3-row">
+    <div class="w3-cell w3-cell-middle w3-container w3-green w3-center w3-mobile" style="width:33%;"><p class="w3-xxxlarge w3-border" style="background: rgba(8, 8, 8, 0.4);">Who am I?</p></div>
     <div class="w3-cell w3-container w3-dark-grey w3-center w3-mobile"><p>
       I'm a computer science major at the University of Colorado Denver, and a total nerd.<br>
-      <figure>
-        <img src="fancylad.jpg" alt="fancy lad" style="max-width:25%;" class="w3-round">
-        <figcaption>Me, dressed up. Not the norm.</figcaption>
-      </figure>
+      <div class="w3-row">
+        <div class="w3-cell w3-container">
+          <figure>
+            <img src="fancylad.jpg" alt="fancy lad" style="max-width:25%;" class="w3-round">
+            <figcaption>Me, dressed up. Not the norm.</figcaption>
+          </figure>
+        </div>
+        <div class="cellw3-container">
+          <figure >
+            <img src="swordlad.jpg" alt="fancy lad" style="max-width:25%;" class="w3-round">
+            <figcaption>Me, with a sword, horse, and kilt. Again, not the norm.</figcaption>
+          </figure>
+        </div>
+
+      </div>
+
       Ever since I was a small child I have always had a huge interst in computers and have spent most of my time surrounding myself with knowledge. From the first laptop I had (lovingly named 'dino' by my father, a late 90's Fujistu Lifebook that struggled to run Ubuntu 8.04 (those were the days)), to the home built budget computers of my middle to high school years, and now to the cloud where I currently run the majority of my projects, I have always carried that deep love of computers with me.<br>
       Other than online, I can be found partcipating on the CU Denver's Dragon Boat team. For those unware of dragon boating, it is a 20 person strong team of paddlers whose end goal is to cross a finish line as fast as possible. To reach this goal requires a high level of team work and coordination, making dragon boating an intensly team based sport. My team is essentially my family, and my love for them and the sport is immense.
       <figure>
@@ -35,7 +85,7 @@
   <hr>
 
   <div class="w3-cell-row">
-    <div class="w3-cell w3-cell-middle w3-container w3-green w3-center w3-mobile" style="width:33%;"><p class="w3-xxxlarge">Projects</p></div>
+    <div class="w3-cell w3-cell-middle w3-container w3-green w3-center w3-mobile" style="width:33%;"><p class="w3-xxxlarge w3-border" style="background: rgba(8, 8, 8, 0.4);">Projects</p></div>
     <div class="w3-cell w3-container w3-dark-grey w3-center w3-mobile"><p>
       I feel the best way for someone in my field to show their abilities is to showcase projects that they have created. To that end, here is a list of all of my projects which I find worth sharing.
       <hr>
