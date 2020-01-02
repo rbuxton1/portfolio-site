@@ -23,18 +23,18 @@
           clearInterval(timer);
         }
         element.style.opacity = op;
-        op += 0.1;
+        op += 0.05;
       }, 50);
     }
     function fadeOutAndCallBack(image, callback){
       var opacity = 1;
       var timer = setInterval(function(){
-        if(opacity < 0.1){
+        if(opacity < 0.05){
           clearInterval(timer);
           callback();
         }
         image.style.opacity = opacity
-        opacity -= .1;
+        opacity -= .05;
       }, 50);
     }
 
