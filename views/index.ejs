@@ -2,18 +2,19 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title> Ryan Buxton </title>
+    <title> Aman Tewolde </title>
   </head>
   <div class="w3-display-container w3-black w3-center" style="width:100%;height:100%;">
-    <img id="titleImage" src="mountain.jpg" alt="a pretty mountain" class="w3-image" style="height:100%;object-fit:cover;width:100%;">
+    <img id="titleImage" src="bench.jpg" alt="a pretty mountain" class="w3-image" style="height:100%;object-fit:cover;width:100%;">
     <div class="w3-display-middle w3-center w3-container w3-border" style="background: rgba(8, 8, 8, 0.4);">
       <div class="w3-jumbo w3-container">Hi</div>
-      <div class="w3-xlarge">I'm Ryan.</div>
-      <div class="w3-xxxlarge">I like computers.</div>
+      <div class="w3-xlarge">I'm Aman.</div>
+      <div class="w3-xxxlarge">I take pictures.</div>
     </div>
   </div>
   <script type="text/javascript">
-    var imgs=["mountain.jpg", "race_mentality1.jpg", "mountain2.jpg", "tool.jpg"];
+    var imgs=["bench.jpg", "colors.jpg", "manitou.jpg", "river.jpg", "sammie.jpg", "street.jpg",
+              "trail.jpg", "two_idiots.jpg", "undergrowth1.jpg", "undergrowth2.jpg"];
     var pos = 1;
 
     function fadeIn(element) {
@@ -23,18 +24,18 @@
           clearInterval(timer);
         }
         element.style.opacity = op;
-        op += 0.05;
+        op += 0.1;
       }, 50);
     }
     function fadeOutAndCallBack(image, callback){
       var opacity = 1;
       var timer = setInterval(function(){
-        if(opacity < 0.05){
+        if(opacity < 0.1){
           clearInterval(timer);
           callback();
         }
         image.style.opacity = opacity
-        opacity -= .05;
+        opacity -= .1;
       }, 50);
     }
 
@@ -52,53 +53,35 @@
 
   <hr>
 
-  <div class="w3-row">
-    <div class="w3-cell w3-cell-middle w3-container w3-green w3-center w3-mobile" style="width:33%;"><p class="w3-xxxlarge w3-border" style="background: rgba(8, 8, 8, 0.4);">Who am I?</p></div>
-    <div class="w3-cell w3-container w3-dark-grey w3-center w3-mobile"><p>
-      I'm a computer science major at the University of Colorado Denver, and a total nerd.<br>
-      <div class="w3-row">
-        <div class="w3-cell w3-container">
-          <figure>
-            <img src="fancylad.jpg" alt="fancy lad" style="max-width:25%;" class="w3-round">
-            <figcaption>Me, dressed up. Not the norm.</figcaption>
-          </figure>
-        </div>
-        <div class="cellw3-container">
-          <figure >
-            <img src="swordlad.jpg" alt="fancy lad" style="max-width:25%;" class="w3-round">
-            <figcaption>Me, with a sword, horse, and kilt. Again, not the norm.</figcaption>
-          </figure>
-        </div>
-
-      </div>
-
-      Ever since I was a small child I have always had a huge interst in computers and have spent most of my time surrounding myself with knowledge. From the first laptop I had (lovingly named 'dino' by my father, a late 90's Fujistu Lifebook that struggled to run Ubuntu 8.04 (those were the days)), to the home built budget computers of my middle to high school years, and now to the cloud where I currently run the majority of my projects, I have always carried that deep love of computers with me.<br>
-      Other than online, I can be found partcipating on the CU Denver's Dragon Boat team. For those unware of dragon boating, it is a 20 person strong team of paddlers whose end goal is to cross a finish line as fast as possible. To reach this goal requires a high level of team work and coordination, making dragon boating an intensly team based sport. My team is essentially my family, and my love for them and the sport is immense.
-      <figure>
-        <img src="race_mentality1.jpg" alt="I love my team." style="max-width:50%;" class="w3-round">
-        <figcaption>Here they are, circling around after a race.</figcaption>
-      </figure>
-      I am currently making my way through my second year of school, enroute to earn my BS of Computer Science by the fall of 2022.
+  <div class="w3-cell-row">
+    <div class="w3-cell w3-cell-middle w3-container w3-center w3-mobile" style="width:33%;background:#6192A1;"><p class="w3-xxxlarge w3-border" style="background: rgba(8, 8, 8, 0.4);color:White;">About me</p></div>
+    <div class="w3-cell w3-container w3-center w3-mobile" style="background:#003149;"><p style="color:White;">
+      I'm a pretty sweet dude. This area is great for a little autobiography type thing.<br>
+      If you have more stuff to say (you do), you can make more of these blocks and then change the colors if you wanted to. <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
     </p></div>
   </div>
 
   <hr>
 
   <div class="w3-cell-row">
-    <div class="w3-cell w3-cell-middle w3-container w3-green w3-center w3-mobile" style="width:33%;"><p class="w3-xxxlarge w3-border" style="background: rgba(8, 8, 8, 0.4);">Projects</p></div>
-    <div class="w3-cell w3-container w3-dark-grey w3-center w3-mobile"><p>
-      I feel the best way for someone in my field to show their abilities is to showcase projects that they have created. To that end, here is a list of all of my projects which I find worth sharing.
-      <hr>
-      <h3> Show Helper </h3>
-      Show Helper is one of my more proud acheivements thus far in my career. The application transformed a community from a completely paper based grading system into a fully functioning online system that allowed for immediate results to be viewed. I have gone threw many revisions in the process of creating it, and likely will go through many more before I settle on an end where I am satisfied. Unlike many of my other projects, Show Helper has press that you can read <a href="http://braymere.blogspot.com/2019/09/show-helper-20.html">here</a>. Normally, the site would be running <a href="http://showhelperapp.com">here</a> (as I redesign the site it is possible that this link wont work as intended!). <br>
-      I feel it important to mention Shoe Helper was a three level solution: I had implemented a web interface that users were able to enter their information into, a middle man server that would allow the solution to be used at venues where WiFi may not be a possibility (this community was using pen and paper before I introduced this), and an Android app which communicates with the middle man server.<br>
-      <h3> Silence Mascot </h3>
-      This one started life as a joke between coworkers where we rated our moral and physical capability to fight certain corporate mascots. Silly, silly, concept but nonetheless lots of fun was had. The reason I chose to bring this project up is because through it I feel I gained a lot of experience in web app design (I had to learn about cookie size limits the hard way), and lots of experience with the modern philosophy of applications as a container that Docker offers. Throughout the design of Silence Mascot I wanted to be able to deploy the project on any server, at any time, anywhere. Using Docker (and specifically Docker Compose), I was able to create a deleiverable project that can be deployed in a matter of minutes with no considerable overhead. <i>Cool.</i> Silence Mascot can be played <a href="http://silencemascot.com">here</a>, I am always interested to see how people react to these type questions, haha.<br>
-      <h3> NaMoPaiMo Registrar </h3>
-      This was another project created to help the model horse community that my mother is extremely involved in. NaMoPaiMo (or National Model [horse] Paint Month) was an initiative organized by my mother with the goal that people would sign up for the event and share progress along the duration of the month and then at the end show their completed (painted) horse. This project has gone through many redesigns, most recent of which took all of my experience with Docker and Docker Compose into account. It currently runs <a href="http://namopaimo.com">here</a>, and has all of the sorce code visible <a href="https://github.com/rbuxton1/node-namopaimo">here</a>.
-      <h3> Student Art Archieve </h3>
-      Student Art Archeive (SAA) was my senior project for the computer science pathway at my highschool. I worked along with my close friend to develop SAA for the art department, the end goal being to provide some sort of in house solution for the department to maintain a curated digital portfolio for each student. Essentially we created a system that allowed students to upload images to a seperate system in which the staff could curate the art (removing NSFW content for example) and then let what passes this curation on to the live site where anyone could view it. This project was written entirely in PHP and was designed to be deployable to any school who would desire it, however I have stopped actively maintaining it. To the best of my knowledge the art department still uses this system, I have however not recently checked. The code and a likely broken wiki can be viewed <a href="https://github.com/rbuxton1/saa">here</a>.
+    <div class="w3-cell w3-cell-middle w3-container w3-center w3-mobile" style="width:33%;background:#6192A1;"><p class="w3-xxxlarge w3-border" style="background: rgba(8, 8, 8, 0.4);color:White;">Contact</p></div>
+    <div class="w3-cell w3-container w3-center w3-mobile" style="background:#003149;"><p style="color:White;">
+      An example of another block.</p>
+      <div class="w3-jumbo" style="color:White;"> You can do crazy things like this too </div> <p style="color:White;">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
     </p></div>
+  </div>
+
+  <hr>
+
+  <div class="w3-display-container w3-center" style="width:100%;">
+    <div class="w3-display-middle w3-container">
+      <p> Made with <3 by Ryan Buxton</p>
+    </div>
+  </div>
   </div>
 
 </html>
